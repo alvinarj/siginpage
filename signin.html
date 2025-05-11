@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #d19b81;
+            background-image: url('https://wallpapers.com/images/hd/aesthetic-grunge-laptop-hz0x3svkcs92fpon.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+        }
+        .login-box {
+            background-color: rgba(101, 139, 108, 0.911);
+            border-radius: 20px; 
+            padding: 35px 40px;
+            width: 380px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .login-box h2 {
+            font-size: 26px;
+            font-weight: 300;
+            margin-bottom: 25px;
+            color: #e0e0e0;
+        }
+        .login-box form {
+            width: 100%;
+        }
+        input {
+            width: 100%;
+            padding: 14px 18px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px; 
+            font-size: 15px;
+            color: #fff;
+            outline: none;
+            transition: all 0.3s;
+            margin-bottom: 30px;
+        }
+        input::placeholder {
+            color: #1d1d1d;
+        }
+        input:invalid:not(:placeholder-shown) {
+            border: 1px solid red;
+        }
+        input:valid:not(:placeholder-shown) {
+            border: 1px solid green;
+        }
+        input:invalid~button[type="submit"] {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        .signin-button {
+            width: 100%;
+            padding: 14px;
+            background-color: #4285c4;
+            border: none;
+            border-radius: 12px; 
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            margin-bottom: 30px; 
+        }
+        .signin-button:hover {
+            background-color: #3a6fd3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="login-box">
+            <form action="audio.html">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required minlength="8">
+                <button type="submit" class="signin-button">Sign in</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
